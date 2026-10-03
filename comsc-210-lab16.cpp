@@ -12,15 +12,23 @@ private:
     int BLUE;
 
 public:
-    //Member Setters
+    Color(int a, int b, int c){
+        RED = a;
+        GREEN = b;
+        BLUE = c;
+    }
+    
+    Color()                               {RED = 0; GREEN = 0; BLUE = 0;}
+
+
+    //Member Setter and Getters
+    int getRED()                           {return RED;}
     void setRED(int a)                      {RED = a;}
+    int getGREEN()                         {return GREEN;}
     void setGREEN(int a)                    {GREEN = a;}
+    int getBLUE()                          {return BLUE;}
     void setBLUE(int a)                     {BLUE = a;}
 
-    //Member Getters
-    int getRED()                           {return RED;}
-    int getGREEN()                         {return GREEN;}
-    int getBLUE()                          {return BLUE;}
 
     //Data display;
     void print(){
