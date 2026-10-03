@@ -44,14 +44,10 @@ void display(Color s);
 
 int main(){
     Color color1(253,200,106);
- 
     color1.print();
     display(color1);
 
     Color color2(37,48);
-    color2.setRED(37);
-    color2.setGREEN(48);
-    color2.setBLUE(147);
     color2.print();
     display(color2);
 
