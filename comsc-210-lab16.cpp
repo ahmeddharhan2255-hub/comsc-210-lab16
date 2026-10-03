@@ -7,35 +7,35 @@ using namespace std;
 class Color{
 private:
     //Private member variables;
-    int RED;
-    int GREEN;
-    int BLUE;
+    int R;
+    int G;
+    int B;
 
 public:
     //Constructors;
-    Color()                               {RED = 0; GREEN = 0; BLUE = 0;}
-    Color(int a)                          {RED = a; GREEN = 0; BLUE = 0;}
-    Color(int a, int b)                   {RED = a; GREEN = b; BLUE = 0;}
-    Color(int a, int b, int c)            {RED = a; GREEN = b; BLUE = c;}
+    Color()                               {R = 0; G = 0; B = 0;}
+    Color(int a)                          {R = a; G = 0; B = 0;}
+    Color(int a, int b)                   {R = a; G = b; B = 0;}
+    Color(int a, int b, int c)            {R = a; G = b; B = c;}
 
 
 
     //Member Setter and Getters
-    int getRED()                           {return RED;}
-    void setRED(int a)                      {RED = a;}
-    int getGREEN()                         {return GREEN;}
-    void setGREEN(int a)                    {GREEN = a;}
-    int getBLUE()                          {return BLUE;}
-    void setBLUE(int a)                     {BLUE = a;}
+    int getR()                           {return R;}
+    void setR(int a)                      {R = a;}
+    int getG()                         {return G;}
+    void setG(int a)                    {G = a;}
+    int getB()                          {return B;}
+    void setB(int a)                     {B = a;}
 
 
     //Data display;
     void print(){
         cout << "COLOR RGB VALUES" << endl;
         cout << "*****************" << endl;
-        cout << " RED Color Value: " << RED << endl;
-        cout << " GREEN Color Value: " << GREEN << endl;
-        cout << " BLUE Color Value: " << BLUE << endl;
+        cout << " RED Color Value: " << R << endl;
+        cout << " GREEN Color Value: " << G << endl;
+        cout << " BLUE Color Value: " << B << endl;
     }
 };
 
@@ -66,8 +66,8 @@ int main(){
 // Arguments: (Color Object)
 //Returns nothing
 void display(Color s){
-    cout << "(" << s.getRED() << ", " << s.getGREEN();
-    cout << ", " << s.getBLUE() << ")";
+    cout << "(" << s.getR() << ", " << s.getG();
+    cout << ", " << s.getB() << ")";
     cout << endl;
     cout << endl;
     cout << endl;
