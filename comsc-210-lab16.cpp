@@ -12,13 +12,12 @@ private:
     int BLUE;
 
 public:
-    Color(int a, int b, int c){
-        RED = a;
-        GREEN = b;
-        BLUE = c;
-    }
-    
+    //Constructors;
     Color()                               {RED = 0; GREEN = 0; BLUE = 0;}
+    Color(int a)                          {RED = a; GREEN = 0; BLUE = 0;}
+    Color(int a, int b)                   {RED = a; GREEN = b; BLUE = 0;}
+    Color(int a, int b, int c)            {RED = a; GREEN = b; BLUE = c;}
+
 
 
     //Member Setter and Getters
@@ -44,14 +43,12 @@ public:
 void display(Color s);
 
 int main(){
-    Color color1;
-    color1.setRED(253);
-    color1.setGREEN(200);
-    color1.setBLUE(106);   
+    Color color1(253,200,106);
+ 
     color1.print();
     display(color1);
 
-    Color color2;
+    Color color2(37,48);
     color2.setRED(37);
     color2.setGREEN(48);
     color2.setBLUE(147);
@@ -59,16 +56,10 @@ int main(){
     display(color2);
 
     Color color3;
-    color3.setRED(137);
-    color3.setGREEN(60);
-    color3.setBLUE(116);
     color3.print();
     display(color3);
 
-    Color color4;
-    color4.setRED(93);
-    color4.setGREEN(3);
-    color4.setBLUE(14);
+    Color color4(93,3,14);
     color4.print();
     display(color4);
 
